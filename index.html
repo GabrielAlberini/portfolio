@@ -32,8 +32,8 @@
     </section>
 </header>
 <section id="inicio" class="home">
-    <article class="hero-image" style="--image: url('assets/fondo.jpg')">
-        <aside class="hero-image-opacity">
+    <article class="hero-image" style="--image: url('assets/fondo.jpg'); --hero-attachment: fixed;">
+        <aside class="hero-image-opacity" style="--hero-text-color: var(--black-alpha-color)">
             <div class="hero-image-content">
                 <h2 class="hero-image-title">Bienvenido<br>a mi sitio</h2>
                 <a class="btn" href="#contacto">CONTÁCTAME</a>
@@ -53,7 +53,7 @@
             <a class="btn" href="https://github.com/GabrielAlberini" target="__blank" rel="noopener">DESCARGA MI CV</a>
         </div>
     </article>
-    <article>
+    <article class="cont-img-about">
         <img class="gray-scale" src="assets/perfil.jpg" style="border-radius: 10px;" alt="foto de perfil">
     </article>
     <article>
@@ -67,7 +67,7 @@
             </div>
             <div class="skill-cont">
                 <div>
-                    <span>HTML</span>
+                    <span>CSS</span>
                 </div>
                 <img src="assets/img-skills/css.svg" alt="logo-css">
             </div>
@@ -361,7 +361,27 @@
         </div>
     </article>
 <section id="testimonios" class="testimonials">
-    <h2>Testimonios</h2>
+    <article class="hero-image" style="--image: url('assets/hero-image-customers.jpg'); --hero-attachment: scroll;">
+        <aside class="hero-image-opacity" style="--hero-text-color:var(--white-apha-color);">
+            <div class="hero-image-content">
+                <h2 class="section-title">Mis clientes dicen</h2>
+                <div class="container">
+                    <div>
+                        <img src="assets/customer-1.jpg" alt="foto de cliente">
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatem explicabo deserunt saepe nostrum? Ad!</p>
+                    <p>NOMBRE DEL CLIENTE</p>
+                    <i>Dueña</i>
+                    <div class="cont-controlador-slider">
+                        <div class="controlador-slider"></div>
+                        <div class="controlador-slider"></div>
+                        <div class="controlador-slider"></div>
+                        <div class="controlador-slider"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </article>
 </section>
 <section id="contacto" class="contact">
     <h2>Contacto</h2>

@@ -14,7 +14,7 @@
     --link-color: #509ee3;
     --title-color: #333;
     --text-color: #222;
-    --white-apha-color: rgba(255,255,255,0.5);
+    --white-apha-color: rgba(255, 255, 255, 0.212);
     --black-alpha-color: rgba(0, 0, 0, 0.5);
     --font: "Raleway", sans-serif;
     --max-width: 1200px;
@@ -99,7 +99,8 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-color: var(--hero-text-color);
+    background-attachment: var(--hero-attachment);
 }
 
 .hero-image-opacity {
@@ -109,7 +110,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--black-alpha-color);
+    background-color: var(--hero-text-color);
 }
 
 .hero-image-title {
@@ -117,7 +118,6 @@ p {
     font-size: 6.5vw;
     color: var(--white-color);
 }
-
 
 /*Menu*/
 .menu-btn {
@@ -432,26 +432,27 @@ p {
 
 .skill-cont {
     position: relative;
+    margin: auto;
+    cursor: pointer;
 }
 
 .skill-cont div {
     position: absolute;
     background-color: var(--first-color);
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     top: 4px;
-    left: 4px;
-    z-index: 1000;
+    left: 6px;
+    z-index: 998;
     opacity: 0;
     pointer-events: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.8rem;
     color:var(--white-color);
-    outline: 1px solid black;
-
+    outline: .1rem solid black;
 }
 
 .skill-cont:hover > div {
@@ -461,7 +462,13 @@ p {
 }
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
+
+    .cont-img-about {
+        width: 50%;
+        margin: auto;
+    }
+    
     .portfolio > .container {
         display: grid;
         grid-template-columns: repeat(2, 50%);  
@@ -474,7 +481,7 @@ p {
     .portfolio .section-title {
         grid-column: span 2;
     }
-
+    
     .portfolio-modal {
     background-color: white;
     padding: 1rem;
@@ -493,6 +500,18 @@ p {
     .services .section-title {
         grid-column: span 2;
     }
+
+    .skills {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .skill-cont div {
+        width: 110px;
+        height: 110px;
+    } 
+    .skill-cont div > span {
+        font-size: 1.3rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -501,6 +520,11 @@ p {
         grid-template-columns: repeat(3, 30%);
         justify-content: space-between;
         align-content: center;
+    }
+
+    .cont-img-about {
+        width: 100%;
+        height: 100%;
     }
 
     .portfolio > .container {
@@ -534,7 +558,16 @@ p {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    
+    .skill-cont div {
+        width: 80px;
+        height: 80px;
+        left: 4px;
+    }
+
+    .skill-cont div > span {
+        font-size: .9rem;
+    }
+
     .skills img:hover {
         transition: .5s ease;
         cursor: pointer;
