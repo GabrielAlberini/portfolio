@@ -514,6 +514,11 @@ p {
     margin-bottom: 2rem;
 }
 
+.contact-about > h4 {
+    width: 100%;
+    text-align: left;
+}
+
 .contact-card {
     margin: 1rem auto;
     padding: 1rem;
@@ -666,6 +671,7 @@ p {
 }
 
 .skills {
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     cursor: pointer;
