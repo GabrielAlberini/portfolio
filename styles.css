@@ -164,6 +164,14 @@ p {
     background-size: cover;
 }
 
+.item-7 {
+    width: 100%;
+    height: 400px;
+    background-image: url("./assets/hobbies/apicultura.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
 /*Contact Form*/
 
 .contact-form {
@@ -333,7 +341,7 @@ p {
 
 .menu a {
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
@@ -341,7 +349,7 @@ p {
 }
 
 .menu a:hover {
-    color: var(--white-color);
+    color: var(--third-color);
     background-color: var(--first-color);
 }
 
@@ -360,7 +368,7 @@ p {
     align-items: center;
     opacity: 0;
     pointer-events: none;
-    transition: all 1s;
+    transition: all .5s;
 }
 
 .modal-content {
