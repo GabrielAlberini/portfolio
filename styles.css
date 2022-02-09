@@ -91,8 +91,6 @@ p {
     line-height: 1.6;
 }
 
-/*Components*/
-
 /*Carousel*/
 
 #hobbies {
@@ -317,7 +315,7 @@ p {
     transition: opacity .8s ease;
 }
 
-.menu.is-active {
+.menu .is-active {
     opacity: 1;
     overflow-y: hidden;
     pointer-events: auto;
