@@ -1,11 +1,11 @@
 /*Custom Properties*/
 :root {
-    --first-color: #d90062;
-    --first-alpha-color: rgba(217, 0, 98, 0.75);
-    --second-color: #14192d;
+    --first-color: #0065d9;
+    --first-alpha-color: #0065d9;
+    --second-color: white;
     --second-alpha-color: rgba(20,25,45,0.75);
-    --third-color:#501464;
-    --third-alpha-color: rgba(80,20,100,0.75);
+    --third-color:#000000;
+    --third-alpha-color: rgba(0, 0, 0, 0.75);
     --white-color: #fff;
     --gray-light-color: #f3f3f3;
     --gray-color: #ccc;
@@ -94,63 +94,76 @@ p {
 /*Components*/
 
 /*Carousel*/
-.carousel {
-    margin: 2rem auto;
-    padding: 2rem 0;
-    max-width: 800px;
-    text-align: center;
-    overflow-x: hidden;
-    background-color: var(--carousel-bg-color);
-}
 
-.carousel .slides {
-    /*Por cada slide que haya se debe aplicar 100% más en el width*/
-    width: 400%;
+#hobbies {
+    height: 100vh;
     display: flex;
-    list-style: none;
-    padding-left: 0;
-    transition: transform .5s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.carousel input {
-    display: none;
+.carousel h4 {
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
-.carousel label {
-    display: inline-block;
-    width: 0.75rem;
-    height: 0.75rem;
-    border: medium solid black;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 .25rem;
+.item-1 {
+    width: 100%;
+    height: 400px;
+    background-image: url("./assets/hobbies/ciclismo.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
-#slide-1:checked ~ .slides {
-    transform: translateX(0%);
-}
-#slide-2:checked ~ .slides {
-    transform: translateX(-25%);
-}
-#slide-3:checked ~ .slides {
-    transform: translateX(-50%);
-}
-#slide-4:checked ~ .slides {
-    transform: translateX(-75%);
+.item-2 {
+    width: 100%;
+    height: 400px;
+    background-image: url("./assets/hobbies/profesor-de-teatro.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
-#slide-1:checked ~ .slides-nav label#dot1,
-#slide-2:checked ~ .slides-nav label#dot2,
-#slide-3:checked ~ .slides-nav label#dot3,
-#slide-4:checked ~ .slides-nav label#dot4 {
-    background-color: var(--first-color);
-    cursor: pointer;
+.item-3 {
+    width: 100%;
+    height: 400px;
+    background-image: url("./assets/hobbies/reforestacion.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
-.text-slide {
-    width: 80%;
-    padding-bottom: 1rem;
-    margin: auto;
+.item-4 {
+    width: 100%;
+    height: 400px;
+    background-image: url("./assets/hobbies/teatro-mejor.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.item-4 {
+    width: 100%;
+    height: 400px;
+    background-image: url("./assets/hobbies/telas}.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.item-5 {
+    width: 100%;
+    height: 400px;
+    background-image: url("./assets/hobbies/teatro-colegio.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.item-6 {
+    width: 100%;
+    height: 400px;
+    background-image: url("./assets/hobbies/teatro-mejor.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 /*Contact Form*/
@@ -485,8 +498,7 @@ p {
     }
 
     .text-slide {
-        width: 100%;
-        padding-bottom: 0;
+        width: 80%;
     }
 }
 
@@ -550,6 +562,7 @@ p {
     width: 100%;
     height: var(--header-height);
     background-color: var(--second-color);
+    outline: 2px solid #ccc;
 }
 
 .header > .container {
@@ -760,7 +773,7 @@ p {
 
     .footer small > a {
         text-decoration: none;
-        color: var(--first-color);
+        color: var(--link-color);
     }
 
     .header {

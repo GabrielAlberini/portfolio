@@ -1,3 +1,25 @@
+
+/*Owl Carousel whit JQuery*/
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:false,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
 /*Menu*/
 ((d) => {
     //Se declaran anteponiendo el $ porque 
@@ -59,3 +81,4 @@
             });   
         });
 })(document)
+
