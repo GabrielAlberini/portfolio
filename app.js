@@ -9,6 +9,7 @@
         $btnMenu.firstElementChild.classList.toggle("none");
         $btnMenu.lastElementChild.classList.toggle("none");
         $menu.classList.toggle("is-active");
+        console.log($menu)
     });
 
     d.addEventListener("click", e => {
@@ -24,9 +25,8 @@
 
 /*ContactForm*/
 
-    //Se declaran anteponiendo el $ porque 
-    //están haciendo referencia a un elemento del DOM
-    
+//Se declaran anteponiendo el $ porque 
+//están haciendo referencia a un elemento del DOM
 
 ((d) => {
     //Se declaran anteponiendo el $ porque 
