@@ -114,6 +114,7 @@ p {
     background-image: url("./assets/hobbies/ciclismo.jpg");
     background-position: center;
     background-size: cover;
+    filter: grayscale(1);
 }
 
 .item-2 {
@@ -122,6 +123,7 @@ p {
     background-image: url("./assets/hobbies/profesor-de-teatro.jpg");
     background-position: center;
     background-size: cover;
+    filter: grayscale(1);
 }
 
 .item-3 {
@@ -130,6 +132,7 @@ p {
     background-image: url("./assets/hobbies/reforestacion.jpg");
     background-position: center;
     background-size: cover;
+    filter: grayscale(1);
 }
 
 .item-4 {
@@ -138,6 +141,7 @@ p {
     background-image: url("./assets/hobbies/teatro-mejor.jpg");
     background-position: center;
     background-size: cover;
+    filter: grayscale(1);
 }
 
 .item-4 {
@@ -146,6 +150,7 @@ p {
     background-image: url("./assets/hobbies/telas}.jpg");
     background-position: center;
     background-size: cover;
+    filter: grayscale(1);
 }
 
 .item-5 {
@@ -154,6 +159,7 @@ p {
     background-image: url("./assets/hobbies/teatro-colegio.jpg");
     background-position: center;
     background-size: cover;
+    filter: grayscale(1);
 }
 
 .item-6 {
@@ -162,6 +168,7 @@ p {
     background-image: url("./assets/hobbies/teatro-mejor.jpg");
     background-position: center;
     background-size: cover;
+    filter: grayscale(1);
 }
 
 .item-7 {
@@ -170,6 +177,7 @@ p {
     background-image: url("./assets/hobbies/apicultura.jpg");
     background-position: center;
     background-size: cover;
+    filter: grayscale(1);
 }
 
 /*Titulos*/
