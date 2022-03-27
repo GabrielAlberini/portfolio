@@ -617,6 +617,7 @@ p {
 }
 
 .contact-card {
+    width: 100%;
     margin: 1rem auto;
     padding: 1rem;
     width: 100%;
@@ -836,7 +837,7 @@ p {
     }
 
     .contact-cards {
-        grid-template-columns: repeat(4, 24%);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .cont-img-about {
